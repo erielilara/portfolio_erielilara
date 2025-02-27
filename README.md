@@ -1,8 +1,8 @@
-# Nombre de tu Proyecto
+# Erielí Carolina Lara - Frontend Developer
 
 ![Portada del proyecto](./public/images/mockups.svg)
 
-## Techstack and Services
+## Techstack
 
 - Next.js
 - TypeScript
