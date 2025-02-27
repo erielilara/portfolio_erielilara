@@ -1,0 +1,153 @@
+.header{
+    width: 100%;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center; 
+    padding-top: 20px;
+    margin-bottom: 45px;
+}
+
+.avcontainer {
+margin-right: 28px;
+grid-column-start: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.avcontainer2{
+    height: 181px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.image {
+    border-radius: 50%;
+}
+
+.avcoment{
+    padding-top: 0;
+    min-width: 0;
+}
+
+.name{
+    margin-top: auto;
+    overflow-x: hidden;
+    grid-column-start: 2;
+    grid-row-start: 1; 
+    
+}
+
+.profile {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    
+    flex-direction: row;
+    gap: 8px; 
+    h2{
+        margin-bottom: 0;
+        margin-right: 20px;
+        font-weight: 400;
+    }
+}
+
+.profilebtns {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px; 
+}
+
+.button{
+    font-size: 14px;
+    border: none; 
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: var(--main-button);
+    cursor: pointer;
+    color: var(--text-color)
+}
+
+.mode{
+    background-color: transparent;
+    border: none;
+    color:rgb(245,245,245); 
+}
+
+.name2 {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    grid-column-start: 2;
+    grid-row-start: 1; 
+    p{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+        color: var(--text-color)
+    }
+}
+
+.usernameButton{
+    margin: 6px 0; 
+    background-color: var(--main-button);
+    border: none; 
+    border-radius: 100px;
+    padding: 7px; 
+    color: var(--text-color)
+}
+
+.details{
+    p{
+        font-size: 14px;
+        line-height: 14px;
+        margin: 6px
+    }
+}
+
+.icon {
+    height: 24px; 
+    width: 24px;
+    cursor:pointer
+}
+
+@media (max-width: 750px) {
+    .header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+          "avatar profile"
+          "extra extra";
+        gap: 10px;
+        justify-items: start;
+      }
+
+    .avcontainer {
+      grid-area: avatar;
+      margin: 0;
+    }
+    .name {
+      display: contents;
+    }
+    .name > .profile {
+      grid-area: profile;
+    }
+    .name > *:not(.profile) {
+      grid-area: extra;
+    }
+
+    .profile {
+        display: flex;
+    flex-direction: column;  
+    align-items: flex-start; 
+      }
+      
+      .profile h2 {
+        margin-bottom: 10px;
+      }
+  }
+  

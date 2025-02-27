@@ -1,0 +1,23 @@
+/* Puedes definir tus variables o usar las que ya existan */
+:root {
+    --polaris-site-width-wide: 935px;
+    --polaris-site-padding-top: 30px;
+  }
+  
+  .wrapper{
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  
+    max-width: var(--polaris-site-width-wide);
+    width: calc(100% - 40px);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: var(--polaris-site-padding-top);
+    padding-bottom: 0; 
+    flex-grow: 1;
+  
+  }
+  

@@ -1,0 +1,28 @@
+.container{
+    padding: 0 24px;
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px; 
+}
+
+.item{
+    padding: 15px;
+    .item2{
+        border-radius: 50%;
+        border: 1px solid var(--text-color);
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    p{
+        padding-top: 15px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+    }
+}
