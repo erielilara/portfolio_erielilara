@@ -20,4 +20,12 @@
     flex-grow: 1;
   
   }
+
+  @media (max-width: 750px) {
+    .wrapper {
+      width: calc(100%);
+      padding-left: 8px;
+    padding-right: 8px;
+    }
+  }
   
