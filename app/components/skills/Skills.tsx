@@ -20,6 +20,7 @@ const Skills = () => {
           <div>
             <ul>
               <li>React.js</li>
+              <li>React Native</li>
               <li>Next.js</li>
               <li>Node.js</li>
               <li>Redux</li>
